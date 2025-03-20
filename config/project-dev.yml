@@ -1,0 +1,39 @@
+application:
+  webHost: 127.0.0.1
+  webPort: 8089
+  fileSizeLimit: 5242880
+  supportedFileTypeList:
+    - text/markdown
+  supportedFileSuffixList:
+    - md
+
+minio:
+  endpoint: http://127.0.0.1:9000
+  accessKey: minioadmin
+  secretKey: minioadmin
+  bucket: rag-model-bucket
+
+postgresql:
+  username: yocover
+  password: User01@2025
+  host: 127.0.0.1
+  port: 5432
+  database: aiRetriever
+
+elasticsearch:
+  url: http://127.0.0.1:9200
+  username: elastic
+  password: Elastic@2024!
+  caCerts:
+
+milvus:
+  host: 127.0.0.1
+  port: 19530
+  collectionName: document_vectors
+  dim: 768
+
+ollama:
+  url: http://127.0.0.1:11434
+  model: llama2
+  temperature: 0.5
+  top_p: 0.9

@@ -1,0 +1,22 @@
+{
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "name": "Debug Main",
+      "type": "debugpy",
+      "request": "launch",
+      "program": "${workspaceFolder}/main.py",
+      "args": [
+        "-host", "127.0.0.1",
+        "-port", "2379",
+        "-prefix", "lama-rag/dev/config",
+      ],
+      "env": {
+        "DEBUG": "1"
+      },
+      "cwd": "${workspaceFolder}",
+      "stopOnEntry": true,
+      "console": "integratedTerminal"
+    }
+  ]
+}
